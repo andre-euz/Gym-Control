@@ -1,3 +1,4 @@
+const fs = require('fs');
 // create
 exports.post = function(req, res){
     // req.query
@@ -10,7 +11,14 @@ exports.post = function(req, res){
         if (req.body[key] == "") 
             return res.send('Please, fill all fields.')        
     }
-   return res.send(req.body);
+
+    fs.writeFile("data.json", JSON.stringify(req.body), function(err){
+        if (err) return res.send("Write file error!");
+
+        return res.redirect("/instructors");
+    })
+
+    //return res.send(req.body);
 }
 // update
 
