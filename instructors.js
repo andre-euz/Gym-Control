@@ -10,10 +10,13 @@ exports.post = function(req, res){
     for ( key of keys ) {
         // req.body.key == ""
         if (req.body[key] == "") 
-            return res.send('Please, fill all fields.')        
+            return res.send('Please, fill all fields.');
     }
 
-    data.instructors.push(req.body)
+    req.body.birth = Date.parse(req.body.birth);    
+    req.body.created_at = Date.now();
+
+    data.instructors.push(req.body);
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if (err) return res.send("Write file error!");

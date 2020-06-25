@@ -1,25 +1,20 @@
 {
   "instructors": [
     {
-      "avatar_url": "http://google.com",
-      "name": "teste",
-      "birth": "2020-06-09",
+      "avatar_url": "http://g1.com.br",
+      "name": "Gaules",
+      "birth": "2020-06-11",
       "gender": "M",
-      "services": "teste"
-    },
-    {
-      "avatar_url": "http://google.com.br",
-      "name": "olfar",
-      "birth": "2020-06-26",
-      "gender": "M",
-      "services": "sdasdasdasad"
+      "services": "testaa",
+      "created_at": 1593049947033
     },
     {
       "avatar_url": "http://g1.com.br",
-      "name": "André",
-      "birth": "2020-06-15",
-      "gender": "F",
-      "services": "testaa"
+      "name": "Gaules",
+      "birth": 1591833600000,
+      "gender": "M",
+      "services": "testaa",
+      "created_at": 1593050160270
     }
   ]
 }
