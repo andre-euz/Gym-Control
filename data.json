@@ -19,12 +19,12 @@
       "id": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "avatar_url": "http://google.com",
-      "name": "genisvaldo lucemir",
-      "birth": 1594944000000,
-      "gender": "F",
-      "services": "sdasdasdasad, dfsdsfdfs, dsfdsfsdf",
+      "name": "genisvaldo lucemiro",
+      "birth": 963792000000,
+      "gender": "M",
+      "services": "sdasdasdasad, dsfdsfsdf, teste",
       "created_at": 1595013980067
     },
     {
@@ -53,15 +53,6 @@
       "gender": "M",
       "services": "Java, CSS",
       "created_at": 1595514169126
-    },
-    {
-      "id": 7,
-      "avatar_url": "http://g1.com.br",
-      "name": "André",
-      "birth": 1596153600000,
-      "gender": "M",
-      "services": "Java, CSS",
-      "created_at": 1595514214188
     },
     {
       "id": 8,
