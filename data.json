@@ -1,5 +1,28 @@
 {
-  "members": [],
+  "members": [
+    {
+      "avatar_url": "http://g1.com.br",
+      "name": "André Rodrigo Euzébio",
+      "email": "andre.r.euzebio@gmail.com",
+      "birth": 803433600000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "65",
+      "height": "173",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "Roger Bertoni",
+      "email": "98e0b2483c@boxmailbox.club",
+      "birth": 946684800000,
+      "gender": "M",
+      "blood": "AB0",
+      "weight": "120",
+      "height": "174"
+    }
+  ],
   "instructors": [
     {
       "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
@@ -18,6 +41,15 @@
       "services": "Musculação, crossfit, corrida, bicicleta",
       "created_at": 1595012232196,
       "id": 2
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "Roger Bertoni",
+      "birth": 774144000000,
+      "gender": "M",
+      "services": "C#,CSS,JAVASCRIPT,NODEJS",
+      "created_at": 1596140981067
     }
   ]
 }
