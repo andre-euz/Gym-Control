@@ -11,13 +11,14 @@
     <body>
         <header>
             <div class="links">
-                <a href="/" class="active">Instructors</a>   
-                <a href="/members">Members</a>            
+                <a href="/instructors" id="instructors">Instructors</a>   
+                <a href="/members" id="members">Members</a>            
             </div>            
         </header>
 
         {% block content %}
         {% endblock %}
-        
+        <script src="/scripts.js"></script>    
     </body>
+    
 </html>
