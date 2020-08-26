@@ -1,27 +1,9 @@
 const fs = require('fs');
 const data = require('../data.json');
-const { age, date } = require('../utils');
+const { age, date, blood } = require('../utils');
 
 exports.index = function(req, res){
     return res.render('members/index', { members: data.members });
-}
-
-// show
-exports.show = function(req, res) {
-    const { id } = req.params;
-    
-    const foundMember = data.members.find(function(member){
-        return member.id == id;
-    })
-
-    if (!foundMember) return res.send("Member not found!");
-
-    const member = {
-        ...foundMember,
-        age: age(foundMember.birth)        
-    }
-
-    return res.render("members/show",{ member });
 }
 
 //create
@@ -64,6 +46,25 @@ exports.post = function(req, res) {
     })
 
     //return res.send(req.body);
+}
+
+// show
+exports.show = function(req, res) {
+    const { id } = req.params;
+    
+    const foundMember = data.members.find(function(member){
+        return member.id == id;
+    })
+
+    if (!foundMember) return res.send("Member not found!");
+
+    const member = {
+        ...foundMember,
+        age: age(foundMember.birth) ,
+        blood: blood(foundMember.blood)
+    }
+
+    return res.render("members/show",{ member });
 }
 
 // edit
